@@ -1,16 +1,138 @@
-# React + Vite
+# 🚀 MyReactApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación desarrollada con **React + Vite** y desplegada en **GitHub Pages** usando la rama `gh-pages`.
 
-Currently, two official plugins are available:
+🔗 **Demo en vivo:**  
+https://fauriorrego-create.github.io/myReactApp/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📦 Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚛️ React
+- ⚡ Vite
+- 🎨 Bootstrap
+- 🛠️ ESLint
+- 🌍 GitHub Pages
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Estructura del Proyecto
+
+```
+src/
+│
+├── features/
+│   ├── layout/
+│   │   ├── components/
+│   │   │   ├── Article.jsx
+│   │   │   ├── Content.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Header.jsx
+│   │   ├── hooks/
+│   │   └── pages/
+│   └── products/
+│
+├── shared/
+│   └── styles/
+│       ├── App.css
+│       └── index.css
+│
+├── App.jsx
+├── main.jsx
+└── routes.jsx
+```
+
+---
+
+# 🛠️ Cómo Subir el Proyecto a GitHub (Desde Cero)
+
+Este proyecto fue creado localmente y luego subido a GitHub usando los siguientes pasos:
+
+### 1️⃣ Inicializar Git en el proyecto
+
+```bash
+git init
+```
+
+### 2️⃣ Agregar todos los archivos
+
+```bash
+git add .
+```
+
+*(Los warnings LF → CRLF en Windows no son errores, se pueden ignorar.)*
+
+### 3️⃣ Crear el primer commit
+
+```bash
+git commit -m "mi primer commit"
+```
+
+### 4️⃣ Cambiar la rama a main
+
+```bash
+git branch -M main
+```
+
+### 5️⃣ Conectar con el repositorio de GitHub
+
+```bash
+git remote add origin https://github.com/fauriorrego-create/myReactApp.git
+```
+
+### 6️⃣ Subir el proyecto a GitHub
+
+```bash
+git push -u origin main
+```
+
+---
+
+# 🌍 Despliegue en GitHub Pages
+
+Este proyecto utiliza la rama `gh-pages` para el despliegue.
+
+### Publicar el proyecto:
+
+```bash
+npm run deploy
+```
+
+Esto:
+- Ejecuta `vite build`
+- Genera la carpeta `dist`
+- Crea automáticamente la rama `gh-pages`
+
+Luego en GitHub:
+
+1. Ir a **Settings**
+2. Ir a **Pages**
+3. En *Source* seleccionar:
+   - Branch: `gh-pages`
+   - Folder: `/ (root)`
+4. Guardar
+
+---
+
+## 📌 Scripts Disponibles
+
+```bash
+npm run dev       # Ejecuta en desarrollo
+npm run build     # Genera versión producción
+npm run preview   # Previsualiza el build
+npm run deploy    # Publica en GitHub Pages
+```
+
+---
+
+## 👨‍💻 Autor
+
+**Andres Orrego**  
+Proyecto académico – 2026  
+
+---
+
+## 📄 Licencia
+
+Uso académico.
