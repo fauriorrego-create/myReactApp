@@ -9,7 +9,7 @@ export const Content = () => {
       precio: 1500000,
       stock: 12,
       categoria: "Audio",
-      imagen: "https://images.unsplash.com/photo-1519183071298-a2962be96f8d?q=80&w=1200&auto=format&fit=crop"
+      imagen: "https://share.google/9zMI9Yo8qcWUrYEJA"
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export const Content = () => {
       precio: 300000,
       stock: 20,
       categoria: "Accesorios",
-      imagen: "https://images.unsplash.com/photo-1580128637393-7c0b3f9b5d8f?q=80&w=1200&auto=format&fit=crop"
+      imagen: "https://share.google/NPdep9BvxcpXEbgo4"
     }
   ];
 
