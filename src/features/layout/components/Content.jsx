@@ -9,7 +9,7 @@ export const Content = () => {
       precio: 150000,
       stock: 12,
       categoria: "Audio",
-      imagen: `${import.meta.env.BASE_URL}img/camara.jpg`
+      imagen: new URL('/img/auriculares.jpg', import.meta.env.BASE_URL).href
     },
     {
       id: 2,
