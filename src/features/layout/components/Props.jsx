@@ -10,6 +10,10 @@ const Avatar = ({ nombre, imagen }) => {
         width="180"
         height="180"
         style={{ objectFit: "cover" }}
+        onError={(e) => {
+          e.target.src =
+            "https://via.placeholder.com/180?text=Avatar";
+        }}
       />
       <h5>{nombre}</h5>
     </div>
@@ -18,7 +22,7 @@ const Avatar = ({ nombre, imagen }) => {
 
 const Props = () => {
   return (
-    <div className="text-center">
+    <div className="container py-5 text-center">
       <h1 className="fw-bold mb-4">Props React</h1>
 
       <p className="lead mb-5">
@@ -28,20 +32,22 @@ const Props = () => {
       </p>
 
       <div className="row justify-content-center gap-5">
+
         <Avatar
           nombre="Megin"
-          imagen="/img/descarga.jpg"
+          imagen="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=500&auto=format&fit=crop"
         />
 
         <Avatar
-          nombre="petro"
-          imagen="/img/petro.jpg"
+          nombre="Petro"
+          imagen="https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9?q=80&w=500&auto=format&fit=crop"
         />
 
         <Avatar
-          nombre="speed"
-          imagen="/img/speed.webp"
+          nombre="Speed"
+          imagen="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=500&auto=format&fit=crop"
         />
+
       </div>
     </div>
   );
