@@ -9,7 +9,7 @@ export const Content = () => {
       precio: 150000,
       stock: 12,
       categoria: "Audio",
-      imagen: new URL('/img/auriculares.jpg', import.meta.env.BASE_URL).href
+      imagen: "public/img/camara.jpg"
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ export const Content = () => {
       precio: 2500000,
       stock: 5,
       categoria: "Computadores",
-      imagen: "/img/swich.jpg"
+      imagen: "public/img/swich.jpg"
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ export const Content = () => {
       precio: 80000,
       stock: 20,
       categoria: "Accesorios",
-      imagen: "/img/coleccion.webp"
+      imagen: "public/img/coleccion.webp"
     }
   ];
 
