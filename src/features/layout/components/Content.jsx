@@ -5,27 +5,27 @@ export const Content = () => {
   const productos = [
     {
       id: 1,
-      nombre: "Auriculares Gamer",
-      precio: 150000,
+      nombre: "Cámara Profesional",
+      precio: 1500000,
       stock: 12,
       categoria: "Audio",
-      imagen: "img/camara.jpg"
+      imagen: "https://images.unsplash.com/photo-1519183071298-a2962be96f8d?q=80&w=1200&auto=format&fit=crop"
     },
     {
       id: 2,
-      nombre: "Laptop HP i5",
-      precio: 2500000,
+      nombre: "Nintendo Switch",
+      precio: 1800000,
       stock: 5,
       categoria: "Computadores",
-      imagen: "img/swich.jpg"
+      imagen: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=1200&auto=format&fit=crop"
     },
     {
       id: 3,
-      nombre: "Mouse Inalámbrico",
-      precio: 80000,
+      nombre: "Colección de Figuras",
+      precio: 300000,
       stock: 20,
       categoria: "Accesorios",
-      imagen: "img/coleccion.webp"
+      imagen: "https://images.unsplash.com/photo-1580128637393-7c0b3f9b5d8f?q=80&w=1200&auto=format&fit=crop"
     }
   ];
 
@@ -56,8 +56,12 @@ export const Content = () => {
                   />
                   <div className="card-body">
                     <h5 className="card-title">{producto.nombre}</h5>
-                    <p className="mb-1"><strong>Precio:</strong> ${producto.precio.toLocaleString()}</p>
-                    <p className="mb-1"><strong>Stock:</strong> {producto.stock}</p>
+                    <p className="mb-1">
+                      <strong>Precio:</strong> ${producto.precio.toLocaleString()}
+                    </p>
+                    <p className="mb-1">
+                      <strong>Stock:</strong> {producto.stock}
+                    </p>
                     <p className="text-muted">{producto.categoria}</p>
                   </div>
                 </div>
