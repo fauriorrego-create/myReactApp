@@ -40,7 +40,7 @@ const Props = () => {
 
         <Avatar
           nombre="Petro"
-          imagen="https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9?q=80&w=500&auto=format&fit=crop"
+          imagen="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=500&auto=format&fit=crop"
         />
 
         <Avatar
